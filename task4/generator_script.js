@@ -1,3 +1,4 @@
+"use strict";
 function generator() {
   let long = document.querySelector(".number").value;
   let min = document.querySelector(".min").value;
@@ -23,6 +24,7 @@ function generator() {
   console.log(result);
   return result;
 }
+
 function randomInteger(min, max) {
   let rand = min - 0.5 + Math.random() * (max - min + 1);
   rand = Math.round(rand);
@@ -35,3 +37,15 @@ function getMinOfArray(result) {
 function getMaxOfArray(result) {
   return Math.max.apply(null, result);
 }
+
+// let sumOf = 0;
+// for (let i = 0; i <= result.lenght; i++) {
+//   sumOf = sumOf + i;
+// }
+// document.querySelector(".sum").innerHTML = sumOf;
+
+// let mult = 1;
+// for (let i = 1; i <= result.length; i++) {
+//   mult = mult * i;
+// }
+// document.querySelector(".multi").innerHTML = sumOf;
