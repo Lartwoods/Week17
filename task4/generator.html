@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="generator_style.css" />
+  </head>
+  <body>
+    <div>
+      Длина
+      <input type="text" class="number" value="10" />
+    </div>
+    <div>От<input type="text" class="min" value="-10" /></div>
+    <div>До<input type="text" class="max" value="10" /></div>
+    <button class="button" onclick="generator()">Сгенерировать</button>
+    <p>Сгенерировали:</p>
+    <div class="out"></div>
+    <p>Минимальное:</p>
+    <div class="div_min"></div>
+    <p>Максимальное:</p>
+    <div class="div_max"></div>
+    <p>Среднее арифметическое:</p>
+    <div class="mean"></div>
+    <p>Сумма чисел:</p>
+    <div class="sum"></div>
+    <p>Произведение чисел:</p>
+    <div class="multi"></div>
+
+    <script src="generator_script.js"></script>
+  </body>
+</html>
